@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+.yellow-box {
+  width: 100%;
+  height: 20vh; 
+  background-color: yellow;
+
+  /* Flexbox aktivieren, um Kinder zu zentrieren */
+  display: flex;
+  justify-content: center; /* horizontal zentrieren */
+  align-items: center;     /* vertikal zentrieren */
+}
+
+.green-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* top/right entfernen! */
+}
+
+.green-box {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+
+.blue-box {
+  width: 400px;
+  height: 300px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  top: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.blue-box h1, .blue-box p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.orange-box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.pink-box {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  position: absolute;
+  bottom: 1;
+  right: 0;
+}
