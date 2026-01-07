@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Bärenkreuzung Feldkirch",
+    "state": 1,
+    "graphData": [12, 19, 15, 21, 18, 25, 22, 28, 24, 30]
+  },
+  {
+    "id": 2,
+    "name": "Hauptstraße Dornbirn",
+    "state": 2,
+    "graphData": [8, 14, 11, 17, 13, 19, 16, 22, 18, 24]
+  },
+  {
+    "id": 3,
+    "name": "Rheinstraße Bregenz",
+    "state": 3,
+    "graphData": [15, 22, 18, 25, 21, 28, 24, 31, 27, 33]
+  },
+  {
+    "id": 4,
+    "name": "Montfortstraße Rankweil",
+    "state": 1,
+    "graphData": [10, 16, 13, 19, 15, 22, 18, 25, 21, 27]
+  }
+]

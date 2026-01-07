@@ -1,7 +1,7 @@
-import TodoInterface from "./components/TodoInterface";
+import Traffic from "./components/Traffic";
 
 export default function App() {
-  return <TodoInterface />;
+  return <Traffic />;
   
 }
  
