@@ -1,6 +1,7 @@
 import Counter from "./Counter";
 
 
+
 export default function CounterInterface() {
 return (
 <div className="flex flex-col items-center justify-center gap-6 p-10 bg-blue-300 min-h-screen">

@@ -1,11 +1,34 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Todo from "./components/Todo";
+import Counter from "./components/Counter";
 
+const App = () => {
+  return (
+    <Router>
+      <nav>
+        <Link to="/p2">Page 2</Link>
+      </nav>
+      <Switch>
+        <Route
+          path="/"
+          exact
+          component={() => (
+            <Todo
+              name="Beispiel Todo"
+              kommentar="Das ist ein Beispielkommentar."
+            />
+          )}
+        />
+        <Route
+          path="/p2"
+          component={() => <Counter name={"Freaky"} number={2} />}
+        />
+      </Switch>
+    </Router>
+  );
+};
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = document.getElementById("root")!;
+
+ReactDOM.createRoot(root).render(<App />);

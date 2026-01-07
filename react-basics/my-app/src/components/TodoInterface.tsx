@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Todo from "./Todo";
 import todosData from "../todos.json";
 
+
 export default function TodoInterface() {
   const [todos, setTodos] = useState<
     { id: number; name: string; kommentar: string }[]
@@ -28,3 +29,4 @@ export default function TodoInterface() {
     </div>
   );
 }
+

@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 type TodoProps = {
   name: string;
   kommentar: string;
+  id?: number;
 };
 
 export default function Todo({ name, kommentar }: TodoProps) {
@@ -14,9 +16,17 @@ export default function Todo({ name, kommentar }: TodoProps) {
         erledigt ? "line-through bg-gray-200 text-gray-500" : ""
       }`}
       onClick={() => setErledigt(!erledigt)}
+      
     >
       <h2>{name}</h2>
       <p>{kommentar}</p>
+      <div className="mt-2">
+        <Link to="/p2" className="text-blue-600 underline">Zum Counter</Link>
+      </div>
     </div>
+
   );
+ 
 }
+ 
+
