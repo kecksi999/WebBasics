@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Mario Fink", "beruf": "FFO Angestellter", "alter": 28 },
+  { "id": 2, "name": "Diabetino Insolino", "beruf": "Designer", "alter": 32 },
+  { "id": 3, "name": "Luca Hagen", "beruf": "Projektmanager", "alter": 35 },
+  { "id": 4, "name": "Jan Keckeis", "beruf": "Systemadministrator", "alter": 42 },
+  { "id": 5, "name": "Tobilocus Reicht", "beruf": "Gooner", "alter": 26 }
+]

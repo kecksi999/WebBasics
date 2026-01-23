@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TrafficLight from "./TrafficLight";
 import TrafficGraph from "./TrafficGraph";
 import type { TrafficLightData } from "./TrafficLightInterface";
@@ -6,6 +6,24 @@ import { trafficLightsData } from "./TrafficLightInterface";
 
 export default function Traffic() {
   const [selectedLight, setSelectedLight] = useState<TrafficLightData | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Fetch session ID from root endpoint
+    const fetchSessionId = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/', {
+          credentials: 'include', // Include cookies in request
+        });
+        const data = await response.json();
+        setSessionId(data.id);
+      } catch (error) {
+        console.error('Error fetching session ID:', error);
+      }
+    };
+
+    fetchSessionId();
+  }, []);
 
   const placeholderData = [1, 1, 1, 2, 2, 3, 4, 6, 5, 4, 3, 2];
 
@@ -15,6 +33,11 @@ export default function Traffic() {
         <div className="mb-10">
           <h1 className="text-5xl font-bold text-gray-800 mb-2">Traffic</h1>
           <p className="text-gray-600 text-lg">Verkehrsampel Monitoring System</p>
+          {sessionId && (
+            <p className="text-sm text-blue-600 mt-2">
+              Session ID: <span className="font-mono font-semibold">{sessionId}</span>
+            </p>
+          )}
         </div>
 
         <div className="flex gap-8">
