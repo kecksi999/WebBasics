@@ -1,0 +1,39 @@
+{
+  "cars": [
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2022,
+      "color": "Red",
+      "price": 20000
+    },
+    {
+      "make": "BMW",
+      "model": "X5",
+      "year": 2021,
+      "color": "Black",
+      "price": 55000
+    },
+    {
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2023,
+      "color": "White",
+      "price": 45000
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2020,
+      "color": "Blue",
+      "price": 40000
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "year": 2022,
+      "color": "Grey",
+      "price": 37000
+    }
+  ]
+}

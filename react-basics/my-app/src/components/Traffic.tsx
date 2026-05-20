@@ -9,11 +9,11 @@ export default function Traffic() {
   const [sessionId, setSessionId] = useState<string | null>(null);
 
   useEffect(() => {
-    // Fetch session ID from root endpoint
+    
     const fetchSessionId = async () => {
       try {
         const response = await fetch('http://localhost:3001/', {
-          credentials: 'include', // Include cookies in request
+          credentials: 'include', 
         });
         const data = await response.json();
         setSessionId(data.id);
