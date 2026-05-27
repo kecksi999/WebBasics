@@ -1,7 +1,7 @@
 import { Circle } from "./Circle.js";
 export class SuperCircle extends Circle {
     constructor(x, y, radius, speed = 50) {
-        super(x, y, radius);
+        super(x, y, radius, speed);
         this.speed = speed;
     }
     sayHello() {

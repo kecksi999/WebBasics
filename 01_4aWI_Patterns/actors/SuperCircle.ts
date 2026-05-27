@@ -6,7 +6,7 @@ export class SuperCircle extends Circle {
     radius: number,
     public speed: number = 50,
   ) {
-    super(x, y, radius);
+    super(x, y, radius, speed);
   }
 
   sayHello(): void {
